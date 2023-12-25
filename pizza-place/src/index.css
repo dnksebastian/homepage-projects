@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+  border: 1px solid lightgray;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --main-font: "Roboto", sans-serif;
+
+  /* ## Colors */
+
+  --cs-main-bg: #eeeeee;
+  --cs-text-dark: #90594f;
+  --cs-text-base: #d5c2bf;
+  --cs-text-light: #eeeeee;
+  --cs-text-green: #8e9273;
+
+  /* Element colors */
+  --cs-el-green1: #b1c5ad;
+  --cs-el-green2: #9db8ac;
+  --cs-el-green3: #777d55;
+  --cs-el-red1: #daa17e;
+  --cs-el-red2: #c98377;
+
+}
+
+html {
+  font-family: var(--main-font);
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  min-height: 100vh;
+  background-color: var(--cs-main-bg);
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  min-width: 30rem;
+}
+
+/* Utility classes */
+
+/* Mobile styles */
+
+/* Media queries */
